@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Real Web Friend - Affordable, high-quality websites built with care. Starting at just ₹4,999.">
+    <title>Your Real Web Friend | Affordable Websites That Feel Like a Real Friend</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        .logo-font { font-family: 'Space Grotesk', sans-serif; }
+        
+        .hero-bg {
+            background: linear-gradient(to right, #0a2540 0%, #0f3d5e 50%, #1e5a8a 100%),
+                        url('https://files.oaiusercontent.com/file-j4I2j?se=2026-03-27T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3D12261&sig=...') center right / cover no-repeat;
+            position: relative;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, rgba(10,37,64,0.9), rgba(15,61,94,0.8));
+            z-index: 1;
+        }
+        
+        .hero-content { position: relative; z-index: 2; }
+        
+        .nav-link { position: relative; }
+        .nav-link:after { content: ''; position: absolute; width: 0; height: 2px; bottom: -2px; left: 0; background-color: #10b981; }
+        .nav-link:hover:after { width: 100%; }
+        
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 25px 50px -12px rgb(16 185 129); }
+    </style>
+</head>
+<body class="tail-container">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm">
+        <div class="max-w-screen-2xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <img src="https://files.oaiusercontent.com/file-v6MSF?se=2026-03-27T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3D12260&sig=..." 
+                     alt="Your Real Web Friend Logo" class="w-14 h-14 rounded-full shadow-md">
+                <div>
+                    <h1 class="logo-font text-2xl font-semibold tracking-tighter text-gray-900">Your Real Web Friend</h1>
+                    <p class="text-[10px] text-emerald-600 -mt-1 font-medium">websites with a smile</p>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium text-gray-700">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-x-4">
+                <a href="https://wa.me/918405984078" target="_blank" 
+                   class="flex items-center gap-x-2 bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2.5 rounded-3xl text-sm font-semibold shadow-lg">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <button onclick="toggleMobileMenu()" class="md:hidden w-11 h-11 flex items-center justify-center text-2xl text-gray-700">
+                    <i id="menu-icon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6 py-6">
+            <div class="flex flex-col gap-y-4 text-center text-lg font-medium">
+                <a href="#home" onclick="toggleMobileMenu()" class="py-2">Home</a>
+                <a href="#services" onclick="toggleMobileMenu()" class="py-2">Services</a>
+                <a href="#portfolio" onclick="toggleMobileMenu()" class="py-2">Portfolio</a>
+                <a href="#pricing" onclick="toggleMobileMenu()" class="py-2">Pricing</a>
+                <a href="#about" onclick="toggleMobileMenu()" class="py-2">About</a>
+                <a href="#contact" onclick="toggleMobileMenu()" class="py-2">Contact</a>
+                <a href="https://wa.me/918405984078" target="_blank" class="block mt-4 bg-emerald-600 text-white py-4 rounded-3xl font-semibold">💬 WhatsApp Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero-bg text-white min-h-screen flex items-center">
+        <div class="max-w-screen-2xl mx-auto px-6 hero-content">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="pt-12 md:pt-0">
+                    <div class="inline-flex items-center gap-x-2 bg-white/20 backdrop-blur-md text-white text-sm font-medium px-5 py-2 rounded-3xl mb-6">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                        </span>
+                        Now serving Bihar &amp; all India
+                    </div>
+                    
+                    <h1 class="text-6xl md:text-7xl font-semibold leading-none tracking-tighter logo-font mb-6">
+                        Websites that feel<br>like a <span class="text-emerald-200">real friend</span>
+                    </h1>
+                    
+                    <p class="text-2xl text-emerald-100 max-w-lg mb-8">
+                        Beautiful, fast, mobile-friendly websites at prices that actually make sense.<br>
+                        <span class="font-semibold">Starting at just ₹4,999</span>
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-white text-emerald-700 hover:bg-emerald-50 font-semibold text-xl px-10 py-6 rounded-3xl flex items-center justify-center gap-x-3 shadow-2xl">
+                            Get your free quote in 60 seconds <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#portfolio" class="border-2 border-white/70 hover:border-white text-white font-semibold text-xl px-8 py-6 rounded-3xl">See our work →</a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex justify-center">
+                    <img src="https://files.oaiusercontent.com/file-v6MSF?se=2026-03-27T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3D12260&sig=..." 
+                         alt="Your Real Web Friend Logo" class="w-80 h-80 drop-shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="bg-white py-5 border-b">
+        <div class="max-w-screen-2xl mx-auto px-6 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-gray-400 font-medium">
+            <div><i class="fa-solid fa-check text-emerald-500"></i> 7-day delivery</div>
+            <div><i class="fa-solid fa-check text-emerald-500"></i> Unlimited revisions</div>
+            <div><i class="fa-solid fa-check text-emerald-500"></i> Free domain (1st year)</div>
+            <div><i class="fa-solid fa-check text-emerald-500"></i> 24×7 WhatsApp support</div>
+            <div><i class="fa-solid fa-check text-emerald-500"></i> Money-back guarantee</div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="max-w-screen-2xl mx-auto px-6 py-20 bg-white">
+        <div class="text-center mb-12">
+            <span class="px-4 py-1 bg-emerald-100 text-emerald-700 rounded-3xl text-sm font-semibold">WHAT WE BUILD</span>
+            <h2 class="text-5xl font-semibold logo-font tracking-tighter mt-4">Services that actually help your business grow</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card-hover bg-white border border-gray-100 rounded-3xl p-8">
+                <div class="text-6xl mb-6">🪄</div>
+                <h3 class="text-3xl font-semibold mb-2">One-Page Wonder</h3>
+                <p class="text-gray-600 mb-6">Perfect for freelancers, coaches, local shops.</p>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Custom design</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> WhatsApp button</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Mobile optimized</li>
+                </ul>
+                <div class="mt-10 text-emerald-600 font-semibold">Starting at ₹4,999</div>
+            </div>
+            
+            <div class="card-hover bg-white border border-gray-100 rounded-3xl p-8 relative">
+                <div class="absolute -top-3 right-6 bg-emerald-500 text-white text-xs font-bold px-4 py-1 rounded-3xl">MOST POPULAR</div>
+                <div class="text-6xl mb-6">🏪</div>
+                <h3 class="text-3xl font-semibold mb-2">Multi-Page Business Site</h3>
+                <p class="text-gray-600 mb-6">Full website for shops, clinics, consultants.</p>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Up to 8 pages</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> SEO + Google Maps</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Gallery & Contact</li>
+                </ul>
+                <div class="mt-10 text-emerald-600 font-semibold">₹9,999 only</div>
+            </div>
+            
+            <div class="card-hover bg-white border border-gray-100 rounded-3xl p-8">
+                <div class="text-6xl mb-6">🛒</div>
+                <h3 class="text-3xl font-semibold mb-2">E-commerce Store</h3>
+                <p class="text-gray-600 mb-6">Sell products online with Razorpay.</p>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Up to 50 products</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Payment gateway</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Order dashboard</li>
+                </ul>
+                <div class="mt-10 text-emerald-600 font-semibold">₹19,999</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="bg-gray-50 py-20">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-5xl font-semibold logo-font tracking-tighter">Websites we’ve built for real friends</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-7xl">🧘‍♀️</div>
+                    <div class="p-6">
+                        <h4 class="font-semibold">Yoga with Meera – Patna</h4>
+                        <p class="text-sm text-gray-500">One-page site • Delivered in 5 days</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm">
+                    <div class="h-64 bg-gradient-to-br from-amber-400 to-orange-400 flex items-center justify-center text-7xl">🍛</div>
+                    <div class="p-6">
+                        <h4 class="font-semibold">Mithila Kitchen – Darbhanga</h4>
+                        <p class="text-sm text-gray-500">Full restaurant website with ordering</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-7xl">📚</div>
+                    <div class="p-6">
+                        <h4 class="font-semibold">Bihar Coaching Institute</h4>
+                        <p class="text-sm text-gray-500">Student portal & course catalog</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="max-w-screen-2xl mx-auto px-6 py-20">
+        <div class="text-center mb-12">
+            <h2 class="text-5xl font-semibold logo-font tracking-tighter">Simple & Transparent Pricing</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white rounded-3xl p-8 border">
+                <h3 class="text-emerald-600 font-semibold">STARTER</h3>
+                <div class="text-6xl font-semibold mt-2">₹4,999</div>
+                <ul class="mt-8 space-y-4 text-sm">
+                    <li>1-page website</li>
+                    <li>Mobile responsive</li>
+                    <li>Contact + WhatsApp</li>
+                    <li>Free hosting 1 year</li>
+                </ul>
+                <a href="#contact" class="mt-12 block text-center py-4 bg-gray-900 text-white rounded-3xl">Choose Starter</a>
+            </div>
+            
+            <div class="bg-emerald-600 text-white rounded-3xl p-8 scale-105 shadow-2xl">
+                <div class="text-white/90 font-semibold">STANDARD <span class="text-xs bg-white text-emerald-600 px-3 py-1 rounded-full ml-2">BEST VALUE</span></div>
+                <div class="text-6xl font-semibold mt-2">₹9,999</div>
+                <ul class="mt-8 space-y-4 text-sm">
+                    <li>Up to 8 pages</li>
+                    <li>Custom design</li>
+                    <li>SEO + Google Maps</li>
+                    <li>1 month free maintenance</li>
+                </ul>
+                <a href="#contact" class="mt-12 block text-center py-4 bg-white text-emerald-700 rounded-3xl">Choose Standard</a>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-8 border">
+                <h3 class="text-emerald-600 font-semibold">PREMIUM</h3>
+                <div class="text-6xl font-semibold mt-2">₹19,999</div>
+                <ul class="mt-8 space-y-4 text-sm">
+                    <li>Full E-commerce store</li>
+                    <li>Razorpay integration</li>
+                    <li>Admin dashboard</li>
+                    <li>6 months support</li>
+                </ul>
+                <a href="#contact" class="mt-12 block text-center py-4 bg-gray-900 text-white rounded-3xl">Choose Premium</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-screen-2xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-5">
+                <h2 class="text-5xl font-semibold logo-font tracking-tighter">Hi, I’m your real web friend</h2>
+                <p class="mt-6 text-xl text-gray-600">I build honest, beautiful websites for small businesses at fair prices. No agency markup. Just one friendly developer from Darbhanga.</p>
+            </div>
+            <div class="md:col-span-7 bg-gray-50 rounded-3xl p-10 text-lg">
+                <p class="mb-6">47+ happy clients • 100% on-time delivery • Unlimited revisions until you love it.</p>
+                <p>You get my personal WhatsApp number and fast support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-emerald-600 py-20 text-white">
+        <div class="max-w-screen-2xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold mb-12">What our friends say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur p-8 rounded-3xl">
+                    <p class="italic">"Manish built my Darbhanga shop website in 6 days. Getting orders daily now!"</p>
+                    <div class="mt-8 font-semibold">Ravi Kumar - Mithila Sweets</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-8 rounded-3xl">
+                    <p class="italic">"Professional look, great price, and super fast support. Highly recommended!"</p>
+                    <div class="mt-8 font-semibold">Anjali Singh - Success Academy</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur p-8 rounded-3xl">
+                    <p class="italic">"He understood exactly what I wanted. My yoga site looks amazing!"</p>
+                    <div class="mt-8 font-semibold">Meera Jha - Yoga Instructor</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-screen-2xl mx-auto px-6 py-20">
+        <div class="rounded-3xl bg-gradient-to-br from-emerald-700 to-teal-600 text-white p-12 md:p-16 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-5xl font-semibold logo-font tracking-tighter">Ready to become best friends with your new website?</h2>
+                <p class="mt-8 text-2xl text-emerald-100">Just WhatsApp or fill the form. Reply guaranteed within 2 hours.</p>
+                
+                <a href="https://wa.me/918405984078?text=Hi%20Manish%2C%20I%20want%20a%20website%20for%20my%20business!" 
+                   target="_blank"
+                   class="mt-12 inline-flex items-center gap-x-4 text-2xl font-semibold bg-white text-emerald-700 py-7 px-10 rounded-3xl">
+                    <i class="fa-brands fa-whatsapp text-4xl"></i>
+                    WhatsApp me now: +91 84059 84078
+                </a>
+            </div>
+            
+            <form onsubmit="handleSubmit(event)" class="bg-white rounded-3xl p-8 text-gray-900">
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-medium mb-1 text-gray-500">YOUR NAME</label>
+                        <input type="text" id="name" required class="w-full px-4 py-4 border border-gray-200 rounded-3xl text-lg">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium mb-1 text-gray-500">BUSINESS NAME</label>
+                        <input type="text" id="business" required class="w-full px-4 py-4 border border-gray-200 rounded-3xl text-lg">
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <label class="block text-xs font-medium mb-1 text-gray-500">PHONE / WHATSAPP</label>
+                    <input type="tel" id="phone" required class="w-full px-4 py-4 border border-gray-200 rounded-3xl text-lg">
+                </div>
+                <div class="mt-6">
+                    <label class="block text-xs font-medium mb-1 text-gray-500">WHAT DO YOU NEED?</label>
+                    <textarea id="message" rows="4" placeholder="Tell me about your business..." class="w-full px-4 py-4 border border-gray-200 rounded-3xl text-lg"></textarea>
+                </div>
+                <button type="submit" class="mt-8 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-6 text-xl font-semibold rounded-3xl">
+                    SEND FREE QUOTE REQUEST
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-screen-2xl mx-auto px-6">
+            <div class="flex items-center gap-x-3 text-white mb-8">
+                <img src="https://files.oaiusercontent.com/file-v6MSF?se=2026-03-27T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3D12260&sig=..." 
+                     alt="Logo" class="w-12 h-12 rounded-full">
+                <span class="logo-font text-2xl font-semibold">Your Real Web Friend</span>
+            </div>
+            <p class="text-sm">Made with ❤️ in Darbhanga, Bihar • © 2026</p>
+            <p class="text-xs mt-4">WhatsApp: +91 84059 84078</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert("🎉 Thank you! Manish will reply on WhatsApp (+91 84059 84078) within 2 hours.");
+            e.target.reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
